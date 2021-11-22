@@ -1,0 +1,13 @@
+@import '../../style/variables.scss';
+.navigation-logo-container {
+  width: 20%;
+  text-align: center;
+  height: 4rem;
+
+  .navigation-logo {
+    height: 4rem;
+    @media screen and (max-width: $screen-s) {
+      content: url('../../assets/sdent-logo-resize-white.png');
+    }
+  }
+}

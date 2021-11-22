@@ -1,0 +1,13 @@
+@import '../../style/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;1,400&display=swap');
+
+.navigation-container {
+  top: 0;
+  height: 64px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  font-family: 'Montserrat';
+  color: $white-color-logo;
+}

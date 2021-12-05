@@ -6,7 +6,7 @@ const Accessibility = () => {
   return (
     <ul className="navbar-accessibility-container">
       <li className="navbar-accessibility-item">
-        <NavLink to="/services" className="navbar-accessibility-link">
+        <NavLink to="/login" className="navbar-accessibility-link">
           Log In
         </NavLink>
       </li>

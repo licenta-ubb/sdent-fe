@@ -1,10 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import './Dropdown.scss';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-import { useState } from 'react';
 
 function Dropdown({ isOpen, setOpen }) {
   const handleClick = (e) => {

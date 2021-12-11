@@ -2,12 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;1,400&display=swap');
 
 .navigation-container {
+  overflow-y: hidden;
   top: 0;
+  padding: 1rem 1.8rem;
   height: 64px;
   width: 100%;
   display: flex;
   align-items: center;
   position: fixed;
   font-family: 'Montserrat';
-  color: $white-color-logo;
+  // box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  background-color: transparent;
 }

@@ -1,0 +1,39 @@
+@import '../../style/variables.scss';
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../../assets/bkk.jpeg');
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  @media screen and(max-width: $mobile-nav) {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.hero-text {
+  text-align: center;
+  font-size: 2rem;
+  position: absolute;
+  top: 45%;
+  color: white;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  @media screen and(max-width: $mobile-nav) {
+    top: 50%;
+    left: 50%;
+  }
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}

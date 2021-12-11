@@ -2,11 +2,14 @@
 .navigation-logo-container {
   width: 20%;
   text-align: center;
-  height: 4rem;
-
+  @media screen and (max-width: $mobile-nav) {
+    width: 50%;
+    margin-left: -3rem;
+  }
   .navigation-logo {
     height: 4rem;
     @media screen and (max-width: $screen-s) {
+      margin-left: 1rem;
       content: url('../../assets/sdent-logo-resize-white.png');
     }
   }

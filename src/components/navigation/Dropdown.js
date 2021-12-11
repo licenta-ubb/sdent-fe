@@ -29,45 +29,18 @@ function Dropdown({ isOpen, setOpen }) {
               </NavLink>
             </li>
             <li onClick={handleClick} className="modal-item">
-              <NavLink to="/contact" className="modal-link">
-                Contact
+              <NavLink to="/login" className="important">
+                Log In
               </NavLink>
             </li>
             <li onClick={handleClick} className="modal-item">
-              <NavLink to="/login" className="modal-link">
-                Log In
+              <NavLink to="/login" className="important">
+                Book
               </NavLink>
             </li>
           </div>
         </Box>
       </Modal>
-      {/* <ul className="dropdown-menu">
-        <li onClick={handleClick} className="dropdown-item">
-          <NavLink to="/services" className="dropdown-link">
-            Services
-          </NavLink>
-        </li>
-        <li onClick={handleClick} className="dropdown-item">
-          <NavLink to="/gallery" className="dropdown-link">
-            Gallery
-          </NavLink>
-        </li>
-        <li onClick={handleClick} className="dropdown-item">
-          <NavLink to="/about" className="dropdown-link">
-            About
-          </NavLink>
-        </li>
-        <li onClick={handleClick} className="dropdown-item">
-          <NavLink to="/contact" className="dropdown-link">
-            Contact
-          </NavLink>
-        </li>
-        <li onClick={handleClick} className="dropdown-item">
-          <NavLink to="/login" className="dropdown-link">
-            Log In
-          </NavLink>
-        </li>
-      </ul> */}
     </>
   );
 }

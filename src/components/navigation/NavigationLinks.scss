@@ -12,21 +12,27 @@
   .navbar-informations-item {
     list-style: none;
     padding: 0 1.2rem;
+    // margin-right: 1.2rem;
+    @media screen and(max-width: 858px) {
+      padding: 0;
+      margin-right: 1rem;
+    }
 
     .navbar-accessibility-link {
-      margin: 0 2.5rem 0 1.2rem;
+      margin: 0 2rem 0 1rem;
       color: white;
       text-decoration: none;
       padding: 0.8rem 1.2rem;
       background-color: $primary-color;
       border-radius: 5px;
-      @media screen and(max-width: 920px) {
-        margin: 1rem;
-      }
 
       &:hover {
         // background-color: rgba(0, 0, 0, 0.034);
         transition: 0.5s background-color ease;
+      }
+      @media screen and(max-width: $screen-l) {
+        margin: 1rem;
+        // margin-right: 1.2rem;
       }
     }
     .navbar-informations-link {
@@ -35,9 +41,6 @@
       color: white;
       padding: 1rem;
       text-decoration: none;
-      @media screen and(max-width: $screen-l) {
-        padding: 0.1rem;
-      }
 
       &:hover {
         background-color: $primary-color;

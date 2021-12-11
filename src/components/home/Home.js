@@ -5,8 +5,6 @@ const Home = () => {
   return (
     <div className="home-main-page">
       <HeroSectionFirst />
-      <HeroSectionFirst />
-      <HeroSectionFirst />
     </div>
   );
 };

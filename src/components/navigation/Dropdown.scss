@@ -28,9 +28,12 @@
       }
 
       .important {
+        background-color: $primary-color;
         font-weight: 650;
+        border-radius: 5px;
         text-decoration: none;
-        color: $primary-color;
+        padding: 0.5rem;
+        color: white;
         font-family: 'Montserrat';
       }
     }

@@ -1,39 +1,66 @@
 @import '../../style/variables.scss';
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../../assets/bkk.jpeg');
-  height: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;1,400&display=swap');
+
+.hero-section-first {
+  margin: 0;
   width: 100%;
+  height: 110vh;
+  background-image: url('../../assets/bkk.jpeg');
   background-size: cover;
-  @media screen and(max-width: $mobile-nav) {
+  background-position: center;
+  color: white;
+  @media screen and(max-width: 333px) {
+    min-width: 333px;
+  }
+  .hero-container-first {
+    width: 90%;
     height: 100%;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    .hero-info-first {
+      background-color: rgba(19, 60, 85, 0.205);
+      padding: 1.5rem 3rem;
+      border-radius: 5px;
+      font-family: 'Montserrat';
+      margin-left: -6rem;
+      text-align: left;
+      @media screen and(max-width: 1200px) {
+        margin-left: -2rem;
+      }
+      @media screen and(max-width: 900px) {
+        margin-left: -1rem;
+      }
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.3rem;
+      }
+      h2 {
+        font-weight: 500;
+        font-size: 1rem;
+        margin-top: 0.3rem;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+      .hero-contact-div {
+        width: 10rem;
+        text-align: center;
+        .book-button {
+          margin-bottom: 0.2rem;
+        }
+        .call-info {
+          margin-top: 0.1rem;
+          font-weight: 300;
+          font-size: 0.75rem;
+          .phone-call-info {
+            text-decoration: none;
+            color: $primary-color;
+            font-weight: 450;
+          }
+        }
+      }
+    }
   }
-}
-
-.hero-text {
-  text-align: center;
-  font-size: 2rem;
-  position: absolute;
-  top: 45%;
-  color: white;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  @media screen and(max-width: $mobile-nav) {
-    top: 50%;
-    left: 50%;
-  }
-}
-
-.hero-text button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 10px 25px;
-  color: white;
-  text-align: center;
-  cursor: pointer;
 }

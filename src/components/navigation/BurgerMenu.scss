@@ -1,7 +1,7 @@
 @import '../../style/variables.scss';
 .burger-menu {
-  margin-left: 10px;
-  padding: 0 3rem;
+  margin-right: 1.5rem;
+  padding: 0 2rem;
   width: 50%;
   height: 4rem;
   display: none;
@@ -10,5 +10,8 @@
     margin-top: 0.8rem;
     display: flex;
     justify-content: flex-end;
+  }
+  @media screen and(max-width: 321px) {
+    padding-right: 2rem;
   }
 }
